@@ -1,3 +1,4 @@
+(require-package 'solarized-theme)
 (require 'solarized)
 (require 'asd-solarized)
 (add-to-list 'load-path "~/.config/emacs/asd/theme/solarized")
@@ -11,7 +12,7 @@
      theme-name
 
      `(default ((,class (:foreground ,base2))))
-     
+
      ;; Selection
      `(region ((,class (:background "#ffff00"))))
      `(hl-line ((,class (:background ,base02))))
@@ -19,7 +20,7 @@
      ;; Line Numbers
      `(line-number ((,class (:weight SemiLight :foreground ,base2))))
      `(line-number-current-line ((,class (:weight bold :foreground ,base3))))
-     
+
      ;; Multilingual
      `(font-lock-keyword-face ((,class (:foreground ,blue :slant oblique))))
      `(font-lock-builtin-face ((,class (:foreground ,base3 :weight bold))))
@@ -27,10 +28,10 @@
      `(font-lock-string-face ((,class (:foreground ,cyan :slant italic))))
      `(font-lock-constant-face ((,class ())))
      `(font-lock-variable-name-face ((,class ())))
-     
+
      `(font-lock-comment-face ((,class (:foreground ,base1 :slant italic))))
      `(font-lock-comment-delimiter-face ((,class (:inherit font-lock-comment-face))))
-     
+
      `(lsp-inlay-hint-face ((,class (:foreground ,base01 :slant oblique :height ,solarized-height-minus-1))))
 
      ;; Emacs Lisp
@@ -49,12 +50,12 @@
      `(org-level-7 ((,class (:inherit org-level))))
      `(org-level-8 ((,class (:inherit org-level))))
      `(org-document-title ((,class (:foreground ,base3 :height ,solarized-height-plus-4 :weight bold :slant italic))))
-     
+
      `(org-block ((,class (:foreground ,base1))))
      `(org-code ((,class (:foreground ,base2 :background ,base02))))
      `(org-verbatim ((,class (:foreground ,base2 :height ,solarized-height-minus-1 :weight Light))))
      `(org-link ((,class (:foreground ,blue :underline t))))
-     
+
      `(org-document-info-keyword ((,class (:foreground ,base01 :height ,solarized-height-minus-1))))
      `(org-block-begin-line ((,class (:foreground ,base01 :height ,solarized-height-minus-1 :underline t))))
      `(org-block-end-line ((,class (:foreground ,base01 :height ,solarized-height-minus-1 :overline t))))
@@ -87,7 +88,7 @@
      `(buffer-description-modeline-file-face ((,class (:foreground ,magenta :weight bold))))
      `(buffer-description-modeline-directory-face ((,class (:foreground ,blue :weight bold))))
      `(buffer-description-modeline-special-face ((,class (:foreground ,base3 :weight bold :slant italic))))
-     
+
      `(buffer-modified-modeline-face ((,class (:foreground ,magenta))))
      `(point-position-modeline-face ((,class (:foreground ,base01 :slant italic))))
      `(fcitx5-ime-modeline-face ((,class (:foreground ,magenta :weight bold))))
